@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <button onclick="SinhVien.nhap()">Nhập</button>
+    <button onclick="SinhVien.in()">In ra màn hình</button>
+    <script>
+        const SinhVien = new Object();
+        const arrSV = new Array();
+        SinhVien.nhap = function () {
+            this.name = prompt("mời nhạp tên")
+            this.price = Number(prompt("Mời nhập giá"))
+            console.log(this)
+            arrSV.push(SinhVien)
+        }
+        SinhVien.in = function () {
+            console.log(arrSV)
+        }
+    </script>
+</body>
+</html>
